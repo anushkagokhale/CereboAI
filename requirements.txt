@@ -1,0 +1,24 @@
+# Core framework - unpinned, let pip resolve compatible versions
+langchain
+langchain-community
+langchain-core
+
+# Groq LLM
+langchain-groq
+groq
+
+# PDF loading
+pypdf
+
+# Embeddings
+sentence-transformers
+huggingface-hub
+
+# Vector store
+faiss-cpu==1.9.0.post1
+
+# Streamlit UI
+streamlit
+
+# Utilities
+python-dotenv
