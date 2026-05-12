@@ -1,6 +1,5 @@
 """
 chatbot.py
-----------
 Builds a conversational RAG chain with manual memory (no langchain.memory import).
 """
 
@@ -13,7 +12,7 @@ from langchain_groq import ChatGroq
 logger = logging.getLogger(__name__)
 
 
-# ── Manual conversation memory (no external dependency) ───────────────────────
+# Manual conversation memory
 class ConversationBufferMemory:
     def __init__(self):
         self.history = []
@@ -34,7 +33,7 @@ class ConversationBufferMemory:
         self.history = []
 
 
-# ── Prompt ────────────────────────────────────────────────────────────────────
+#prompt
 STRICT_PROMPT_TEMPLATE = """You are a precise document assistant.
 Answer the user's question using ONLY the information provided in the context below.
 Do NOT use any prior knowledge or information outside of this context.

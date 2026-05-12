@@ -1,12 +1,9 @@
+#Handles PDF loading, chunking, embedding, and FAISS.
 """
-ingest.py
----------
-Handles PDF loading, chunking, embedding, and FAISS vector store persistence.
-
 Chunking strategy:
-  chunk_size=1000, overlap=200 — preserves sentence context while keeping
-  retrieval precision high. 20% overlap prevents answers from being cut at
-  chunk boundaries. (Good interview talking point.)
+chunk_size=1000, overlap=200 — preserves sentence context while keeping
+retrieval precision high. 20% overlap prevents answers from being cut at
+chunk boundaries.
 """
 
 import os
